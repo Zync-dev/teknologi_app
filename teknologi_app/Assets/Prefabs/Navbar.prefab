@@ -760,7 +760,8 @@ MonoBehaviour:
   - {fileID: 7359180964916559392}
   - {fileID: 920948170599331990}
   - {fileID: 3168255059890762431}
-  currentActiveButton: {fileID: 0}
+  views:
+  - {fileID: 0}
   homeSprites:
   - {fileID: 21300000, guid: 84c79ce1342213446acacb3b2de92f46, type: 3}
   - {fileID: 21300000, guid: b60bc1489c354e04cacab1addef91e43, type: 3}

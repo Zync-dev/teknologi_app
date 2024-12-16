@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class Navbar : MonoBehaviour
 {
     public GameObject[] buttons;
-    public GameObject currentActiveButton;
+    int currentActivePage = 0; //0=Home, 1=Calendar, 2=Lessons, 3=Friends, 4=Menu
+
+    public GameObject[] views;
 
     public Sprite[] homeSprites;
     public Sprite[] calendarSprites;
@@ -15,62 +17,93 @@ public class Navbar : MonoBehaviour
     public Sprite[] friendsSprites;
     public Sprite[] menuSprites;
 
-    private void Start()
-    {
-        if(SceneManager.GetActiveScene().name == "Home")
-        {
-            currentActiveButton = buttons[0];
-
-            currentActiveButton.GetComponent<Image>().sprite = homeSprites[1];
-        }
-        if (SceneManager.GetActiveScene().name == "Lessons")
-        {
-            currentActiveButton = buttons[2];
-
-            currentActiveButton.GetComponent<Image>().sprite = lessonsSprites[1];
-        }
-        if (SceneManager.GetActiveScene().name == "Calendar")
-        {
-            currentActiveButton = buttons[1];
-
-            currentActiveButton.GetComponent<Image>().sprite = calendarSprites[1];
-        }
-        if (SceneManager.GetActiveScene().name == "Friends")
-        {
-            currentActiveButton = buttons[3];
-
-            currentActiveButton.GetComponent<Image>().sprite = friendsSprites[1];
-        }
-        if (SceneManager.GetActiveScene().name == "Menu")
-        {
-            currentActiveButton = buttons[4];
-
-            currentActiveButton.GetComponent<Image>().sprite = menuSprites[1];
-        }
-    }
-
     public void HomeClick()
     {
-        SceneManager.LoadScene("Home");
+        currentActivePage = 0;
+        ResetSprites();
+        buttons[0].GetComponent<Image>().sprite = homeSprites[1];
+        UpdatePage();
     }
 
     public void CalendarClick()
     {
-        SceneManager.LoadScene("Calendar");
+        currentActivePage = 1;
+        ResetSprites();
+        buttons[1].GetComponent<Image>().sprite = calendarSprites[1];
+        UpdatePage();
     }
 
     public void LessonsClick()
     {
-        SceneManager.LoadScene("Lessons");
+        currentActivePage = 2;
+        ResetSprites();
+        buttons[2].GetComponent<Image>().sprite = lessonsSprites[1];
+        UpdatePage();
     }
 
     public void FriendsClick()
     {
-        SceneManager.LoadScene("Friends");
+        currentActivePage = 3;
+        ResetSprites();
+        buttons[3].GetComponent<Image>().sprite = friendsSprites[1];
+        UpdatePage();
     }
 
     public void MenuClick()
     {
-        SceneManager.LoadScene("Menu");
+        currentActivePage = 4;
+        ResetSprites();
+        buttons[4].GetComponent<Image>().sprite = menuSprites[1];
+        UpdatePage();
+    }
+
+    void UpdatePage()
+    {
+        switch(currentActivePage)
+        {
+            case 0:
+                HideAllPages();
+                ShowPage(0);
+                break;
+            case 1:
+                HideAllPages();
+                ShowPage(1);
+                break;
+            case 2:
+                HideAllPages();
+                ShowPage(2);
+                break;
+            case 3:
+                HideAllPages();
+                ShowPage(3);
+                break;
+            case 4:
+                HideAllPages();
+                ShowPage(4);
+                break;
+        }
+    }
+
+    void HideAllPages()
+    {
+        GameObject[] activeViews = GameObject.FindGameObjectsWithTag("Page");
+        foreach (GameObject view in activeViews)
+        {
+            Destroy(view);
+        }
+    }
+
+    void ResetSprites()
+    {
+        buttons[0].GetComponent<Image>().sprite = homeSprites[0];
+        buttons[1].GetComponent<Image>().sprite = calendarSprites[0];
+        buttons[2].GetComponent<Image>().sprite = lessonsSprites[0];
+        buttons[3].GetComponent<Image>().sprite = friendsSprites[0];
+        buttons[4].GetComponent<Image>().sprite = menuSprites[0];
+    }
+
+    void ShowPage(int page)
+    {
+        GameObject currentView = Instantiate(views[page], this.transform.parent.transform);
     }
 }
