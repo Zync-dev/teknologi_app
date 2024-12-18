@@ -1,12 +1,25 @@
+using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoginUI : MonoBehaviour
 {
+    [Header("Pages")]
     public GameObject logInPrefab;
     public GameObject signUpPrefab;
     public GameObject mainViewPrefab;
 
+    [Header("Notifications")]
+    public GameObject notifyPrefab;
     public GameObject canvas;
+
+    private void Start()
+    {
+        if(PlayerPrefs.GetFloat("LoggedIn") == 1)
+        {
+            SceneManager.LoadScene("App");
+        }
+    }
 
     public void ShowLogin()
     {
@@ -33,5 +46,16 @@ public class LoginUI : MonoBehaviour
         {
             view.SetActive(false);
         }
+    }
+
+    public void SendNotification(string message, bool isError)
+    {
+        GameObject canvasObj = GameObject.FindGameObjectWithTag("Canvas");
+        GameObject instantiatedNotify = Instantiate(notifyPrefab, canvas.transform);
+
+        Notification notificationScript = instantiatedNotify.GetComponent<Notification>();
+
+        notificationScript.message = message;
+        notificationScript.isError = isError;
     }
 }

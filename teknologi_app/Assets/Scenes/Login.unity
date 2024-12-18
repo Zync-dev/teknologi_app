@@ -2527,7 +2527,7 @@ GameObject:
   - component: {fileID: 916643506}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2562,6 +2562,7 @@ MonoBehaviour:
   logInPrefab: {fileID: 1425588597948222287}
   signUpPrefab: {fileID: 1519774973}
   mainViewPrefab: {fileID: 7510940195380542259}
+  notifyPrefab: {fileID: 1215469399262124260, guid: adcfbab8d16104743b06ef75854c6972, type: 3}
   canvas: {fileID: 1244317663}
 --- !u!1 &967795208
 GameObject:
@@ -3080,7 +3081,7 @@ GameObject:
   - component: {fileID: 1244317664}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

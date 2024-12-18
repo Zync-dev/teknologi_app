@@ -283,6 +283,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2258336572257745736, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_TagString
+      value: NameTxt
+      objectReference: {fileID: 0}
     - target: {fileID: 5450520670122029197, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
       propertyPath: m_Name
       value: Home_Page
@@ -315,9 +319,17 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7357198767519752622, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4287210115
+      objectReference: {fileID: 0}
     - target: {fileID: 8183469461359294953, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
       propertyPath: m_Value
-      value: 1.0000002
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593419839930024577, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_Vertical
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8971766650124331412, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
       propertyPath: m_AnchorMax.x

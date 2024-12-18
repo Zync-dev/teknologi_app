@@ -3,6 +3,7 @@ using UnityEngine;
 using System.IO;
 using Newtonsoft.Json;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UserManager : MonoBehaviour
 {
@@ -14,8 +15,13 @@ public class UserManager : MonoBehaviour
     public TMP_InputField passwordInputField;
     public TMP_InputField emailInputField;
 
+    GameObject gameManager;
+    LoginUI loginScript;
+
     private void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        loginScript = gameManager.GetComponent<LoginUI>();
         LoadUsers();
     }
 
@@ -62,10 +68,14 @@ public class UserManager : MonoBehaviour
         if (Login(username, password))
         {
             Debug.Log("Login successful!");
+            PlayerPrefs.SetString("Name", usernameInputField.text);
+            PlayerPrefs.SetFloat("LoggedIn", 1);
+            SceneManager.LoadScene("App");
         }
         else
         {
             Debug.Log("Invalid username or password.");
+            loginScript.SendNotification("Ugyldigt brugernavn eller adgangskode!", true);
         }
     }
 
@@ -75,7 +85,8 @@ public class UserManager : MonoBehaviour
         string password = passwordInputField.text;
         string email = emailInputField.text;
         CreateUser(username, password, email);
-        Debug.Log("Account created successfully!");
+        loginScript.SendNotification("Din konto blev oprettet!", false);
+        loginScript.ShowLogin();
     }
 }
 
