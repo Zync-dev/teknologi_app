@@ -6,19 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: edfac7a2d48289a4aa20a961c01349a3
+  - enabled: 1
     path: Assets/Scenes/App.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Calendar.unity
-    guid: f74df064b25b3fb439ba6ba3bf5c5c52
-  - enabled: 1
-    path: Assets/Scenes/Friends.unity
-    guid: 5fe79dd951e83934e84e8ebdfe3d8d58
-  - enabled: 1
-    path: Assets/Scenes/Lessons.unity
-    guid: 7c95a43353a6a554cbd8c9c4c06ecb96
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 66f8884682489a84f9b68cbf1ac4a26d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
