@@ -13,7 +13,7 @@ public class LoginUI : MonoBehaviour
     public GameObject notifyPrefab;
     public GameObject canvas;
 
-    private void Start()
+    void Start()
     {
         if(PlayerPrefs.GetFloat("LoggedIn") == 1)
         {
