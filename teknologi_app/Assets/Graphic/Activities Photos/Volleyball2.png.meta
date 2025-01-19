@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2101232c60df45a469e5d1fb9467b7ad
+guid: d4a92dcefca0c2742801bcc590ca3109
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5355799164434486978
-    second: SearchBg_0
+      213: 8038505062017641940
+    second: Volleyball2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SearchBg_0
+      name: Volleyball2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1042
-        height: 250
+        width: 700
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c6937cb6fe935a40800000000000000
-      internalID: 5355799164434486978
+      spriteID: 4ddadba93c18e8f60800000000000000
+      internalID: 8038505062017641940
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SearchBg_0: 5355799164434486978
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Navbar : MonoBehaviour
 {
     public GameObject[] buttons;
-    int currentActivePage = 0; //0=Home, 1=Calendar, 2=Lessons, 3=Friends, 4=Menu, 5=Achievements, 6=Notifications
+    int currentActivePage = 0; //0=Home, 1=Calendar, 2=Lessons, 3=Friends, 4=Menu, 5=Achievements, 6=Notifications, 7=Calendar_Chosen
 
     public GameObject[] views;
 
@@ -74,6 +74,13 @@ public class Navbar : MonoBehaviour
         UpdatePage();
     }
 
+    public void CalendarChosenClick()
+    {
+        currentActivePage = 7;
+        ResetSprites();
+        UpdatePage();
+    }
+
     void UpdatePage()
     {
         switch(currentActivePage)
@@ -105,6 +112,10 @@ public class Navbar : MonoBehaviour
             case 6:
                 HideAllPages();
                 ShowPage(6);
+                break;
+            case 7:
+                HideAllPages();
+                ShowPage(7);
                 break;
         }
     }

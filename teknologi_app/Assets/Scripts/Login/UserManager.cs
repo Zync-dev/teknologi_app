@@ -93,16 +93,27 @@ public class UserManager : MonoBehaviour
 [System.Serializable]
 public class User
 {
+    // Login
     public string username;
     public string password;
     public string email;
+
+    //Statistics
+    public int finishedLessons;
+
+    //Level
     public int level;
     public int experience;
+
+    //Activities
+    public List<string> activities;
 
     public User(string username, string password, string email)
     {
         this.username = username;
         this.password = password;
         this.email = email;
+        this.level = 1;
+        this.activities = new List<string>();
     }
 }

@@ -331,6 +331,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9115669688453828322, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2080,7 +2084,7 @@ GameObject:
   - component: {fileID: 7151547035980684977}
   m_Layer: 5
   m_Name: Navbar
-  m_TagString: Untagged
+  m_TagString: NavBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2235,6 +2239,7 @@ MonoBehaviour:
   - {fileID: 517871672778929792, guid: dd2134d805c206441808f443791e6943, type: 3}
   - {fileID: 4703248578484411212, guid: 921e2bcf341f2c442b14c33684b208c5, type: 3}
   - {fileID: 4703248578484411212, guid: 92cb813248894b044be1e5aa5b17f27d, type: 3}
+  - {fileID: 1661800641162417077, guid: 1a1aa21e289bfb240b2ade871024ac7f, type: 3}
   homeSprites:
   - {fileID: 21300000, guid: 84c79ce1342213446acacb3b2de92f46, type: 3}
   - {fileID: 21300000, guid: b60bc1489c354e04cacab1addef91e43, type: 3}
