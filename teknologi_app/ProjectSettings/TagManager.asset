@@ -9,6 +9,7 @@ TagManager:
   - GameManager
   - NameTxt
   - NavBar
+  - NotifyCanvas
   layers:
   - Default
   - TransparentFX

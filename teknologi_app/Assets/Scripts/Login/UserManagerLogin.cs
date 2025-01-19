@@ -4,8 +4,9 @@ using System.IO;
 using Newtonsoft.Json;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
-public class UserManager : MonoBehaviour
+public class UserManagerLogin : MonoBehaviour
 {
     private const string USER_DATA_FILE = "user_data.json";
 
@@ -18,11 +19,21 @@ public class UserManager : MonoBehaviour
     GameObject gameManager;
     LoginUI loginScript;
 
+    private string currentUsername;
+
     private void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        loginScript = gameManager.GetComponent<LoginUI>();
+        if (gameManager != null)
+        {
+            loginScript = gameManager.GetComponent<LoginUI>();
+        }
         LoadUsers();
+    }
+
+    public void StartUserManagerObj()
+    {
+        print("User Manager Started!");
     }
 
     public void CreateUser(string username, string password, string email)
@@ -68,8 +79,10 @@ public class UserManager : MonoBehaviour
         if (Login(username, password))
         {
             Debug.Log("Login successful!");
+            currentUsername = username;
             PlayerPrefs.SetString("Name", usernameInputField.text);
             PlayerPrefs.SetFloat("LoggedIn", 1);
+            PlayerPrefs.Save();
             SceneManager.LoadScene("App");
         }
         else
@@ -98,22 +111,10 @@ public class User
     public string password;
     public string email;
 
-    //Statistics
-    public int finishedLessons;
-
-    //Level
-    public int level;
-    public int experience;
-
-    //Activities
-    public List<string> activities;
-
     public User(string username, string password, string email)
     {
         this.username = username;
         this.password = password;
         this.email = email;
-        this.level = 1;
-        this.activities = new List<string>();
     }
 }

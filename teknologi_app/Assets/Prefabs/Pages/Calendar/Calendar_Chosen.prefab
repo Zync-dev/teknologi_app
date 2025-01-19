@@ -453,6 +453,7 @@ MonoBehaviour:
   headerText: {fileID: 6261765121571757673}
   descriptionText: {fileID: 6797512789313782437}
   informationText: {fileID: 7020352511931930341}
+  tilmeldBtn: {fileID: 2657442917517608495}
   logoImg: {fileID: 1550123039816915493}
   itemDataList: {fileID: 11400000, guid: 89875bb729d4e554f8f1bfc5b397f18f, type: 2}
 --- !u!1 &2360291655905859962
@@ -658,7 +659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6735235350103347455, guid: 39b3f390517949648bdafe30a588cef1, type: 3}
+  m_Sprite: {fileID: -4565281207280851824, guid: b46d1d5f39ca3444ea0f1edb0353a425, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -711,7 +712,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3220119687850525068}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5837593834058249882}
+        m_TargetAssemblyTypeName: CalendarChosenPage, Assembly-CSharp
+        m_MethodName: TilmeldBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3891549870014166564
 GameObject:
   m_ObjectHideFlags: 0
