@@ -37,7 +37,7 @@ public class CalendarChosenPage : MonoBehaviour
 
         headerText.text = itemDataList.items[i].header;
         descriptionText.text = itemDataList.items[i].description;
-        informationText.text = $"Dato: {itemDataList.items[i].date}\nLokation: {itemDataList.items[i].location}\nPris: {itemDataList.items[i].price}";
+        informationText.text = $"Dato: {itemDataList.items[i].date}\nLokation: {itemDataList.items[i].location}\nPris: {itemDataList.items[i].price} kr.";
 
         logoImg.sprite = itemDataList.items[i].largeImg;
     }

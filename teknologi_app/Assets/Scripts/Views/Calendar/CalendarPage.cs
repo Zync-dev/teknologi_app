@@ -30,7 +30,10 @@ public class CalendarPage : MonoBehaviour
         public ItemData[] items;
     }
 
-    void Start() => InstatiateItems();
+    void Start()
+    {
+        InstatiateItems();
+    }
 
     void InstatiateItems()
     {
