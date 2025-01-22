@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      keramik_0: -8515146024297122585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

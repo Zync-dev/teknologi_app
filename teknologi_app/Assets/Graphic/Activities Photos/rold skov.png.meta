@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rold skov_0: -5794113547816340336
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
