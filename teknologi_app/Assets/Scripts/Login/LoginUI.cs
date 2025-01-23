@@ -50,7 +50,6 @@ public class LoginUI : MonoBehaviour
 
     public void SendNotification(string message, bool isError)
     {
-        GameObject canvasObj = GameObject.FindGameObjectWithTag("Canvas");
         GameObject instantiatedNotify = Instantiate(notifyPrefab, canvas.transform);
 
         Notification notificationScript = instantiatedNotify.GetComponent<Notification>();

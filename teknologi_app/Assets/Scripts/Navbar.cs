@@ -90,45 +90,8 @@ public class Navbar : MonoBehaviour
 
     void UpdatePage()
     {
-        switch(currentActivePage)
-        {
-            case 0:
-                HideAllPages();
-                ShowPage(0);
-                break;
-            case 1:
-                HideAllPages();
-                ShowPage(1);
-                break;
-            case 2:
-                HideAllPages();
-                ShowPage(2);
-                break;
-            case 3:
-                HideAllPages();
-                ShowPage(3);
-                break;
-            case 4:
-                HideAllPages();
-                ShowPage(4);
-                break;
-            case 5:
-                HideAllPages();
-                ShowPage(5);
-                break;
-            case 6:
-                HideAllPages();
-                ShowPage(6);
-                break;
-            case 7:
-                HideAllPages();
-                ShowPage(7);
-                break;
-            case 8:
-                HideAllPages();
-                ShowPage(8);
-                break;
-        }
+        HideAllPages();
+        ShowPage(currentActivePage);
     }
 
     void HideAllPages()
@@ -152,5 +115,13 @@ public class Navbar : MonoBehaviour
     void ShowPage(int page)
     {
         GameObject currentView = Instantiate(views[page], this.transform.parent.transform);
+    }
+
+    private void Start()
+    {
+        if (PlayerPrefs.GetFloat("LoggedIn") == 0)
+        {
+            SceneManager.LoadScene("Login");
+        }
     }
 }
