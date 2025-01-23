@@ -41,6 +41,7 @@ public class UserManagerLogin : MonoBehaviour
         User user = new User(username, password, email);
         users.Add(user);
         SaveUsers();
+        PlayerPrefs.SetInt($"{username}-Exp", 100);
         Debug.Log($"User  created: {username}, {password}, {email}");
     }
 

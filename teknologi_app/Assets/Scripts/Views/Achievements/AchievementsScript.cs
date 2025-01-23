@@ -5,7 +5,8 @@ using static CalendarPage;
 public class AchievementsScript : MonoBehaviour
 {
 
-    public TMP_Text[] txts;
+    public TMP_Text[] pointTxts;
+    public TMP_Text lvltxt;
     NotificationManager notificationManager;
 
     //PointsPanel
@@ -31,12 +32,21 @@ public class AchievementsScript : MonoBehaviour
         }
     }
 
+    public TMP_Text finishedLessons;
     void Start()
     {
         notificationManager = GameObject.Find("NotificationManager").GetComponent<NotificationManager>();
-        foreach (var item in txts)
+        foreach (var item in pointTxts)
         {
             item.text = PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Points").ToString();
+        }
+        lvltxt.text = Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetInt("Name")}-Exp")/100)).ToString();
+        if(PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons") == 1)
+        {
+            finishedLessons.text = PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons").ToString() + " LEKTION";
+        } else
+        {
+            finishedLessons.text = PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons").ToString() + " LEKTIONER";
         }
     }
 }

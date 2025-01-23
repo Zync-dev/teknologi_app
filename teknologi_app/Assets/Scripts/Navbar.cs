@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -115,6 +116,18 @@ public class Navbar : MonoBehaviour
     void ShowPage(int page)
     {
         GameObject currentView = Instantiate(views[page], this.transform.parent.transform);
+    }
+
+
+    public Slider lvlSlider;
+    public TMP_Text[] lvlTxt;
+    private void Update()
+    {
+        //Navbar-top level
+        lvlSlider.value = (float)PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp");
+
+        lvlTxt[0].text = Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetInt("Name")}-Exp") / 100)).ToString();
+        lvlTxt[1].text = ((Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetInt("Name")}-Exp") / 100)))+1).ToString();
     }
 
     private void Start()

@@ -2183,7 +2183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0 DAGE I ALT
+  m_text: 1 DAGE I ALT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
@@ -2667,7 +2667,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "0 DAGE I TR\xC6K"
+  m_text: "1 DAGE I TR\xC6K"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
@@ -3574,10 +3574,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec1fdb2c31d55a4fb7dc1b293cd03dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txts:
-  - {fileID: 108479853426394708}
-  - {fileID: 3701866845090325781}
+  pointTxts: []
+  lvltxt: {fileID: 1826259962612926802}
   pointsPanel: {fileID: 6079921516108324463}
+  finishedLessons: {fileID: 7326699443266115707}
 --- !u!1 &4937618537618103693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4966,7 +4966,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "0 \xD8VELSER"
+  m_text: 0 LEKTIONER
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
@@ -6655,7 +6655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}

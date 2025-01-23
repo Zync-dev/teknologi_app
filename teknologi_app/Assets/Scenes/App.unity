@@ -1526,7 +1526,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 58.2
+  m_Value: 36
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2570,6 +2570,10 @@ MonoBehaviour:
   menuSprites:
   - {fileID: 21300000, guid: b44f48ba8c04289419a2437ab8072999, type: 3}
   - {fileID: 21300000, guid: 714d4c61ad101f64897f15d3bdf139a8, type: 3}
+  lvlSlider: {fileID: 1448353966}
+  lvlTxt:
+  - {fileID: 1273977589}
+  - {fileID: 896569613}
 --- !u!222 &6240384746162450457
 CanvasRenderer:
   m_ObjectHideFlags: 0

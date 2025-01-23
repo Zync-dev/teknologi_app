@@ -165,13 +165,15 @@ public class LessonsQuiz : MonoBehaviour
     {
         if (id == quizQuestions[chosenQuiz].CorrectAnswerIndex)
         {
-            notificationManager.SendNotification("Rigtigt svar! +10 mønter", false);
+            notificationManager.SendNotification("Rigtigt svar! +10 point & +25 XP", false);
             PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Points", PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Points") + 10);
+            PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Exp", PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp") + 25);
         } else
         {
             notificationManager.SendNotification("Forkert svar!", true);
         }
         quizPage.SetActive(false);
+        PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons", PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons") + 1);
         PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Quiz_Answered-{chosenQuiz}", 1);
         startQuizBtn.interactable = false;
         startQuizBtn.GetComponentInChildren<TMP_Text>().text = "Allerede besvaret";
