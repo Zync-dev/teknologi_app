@@ -2,9 +2,7 @@ using TMPro;
 using UnityEngine;
 using static CalendarPage;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 using Unity.VisualScripting;
-using UnityEngine.UI;
 
 public class CalendarChosenPage : MonoBehaviour
 {

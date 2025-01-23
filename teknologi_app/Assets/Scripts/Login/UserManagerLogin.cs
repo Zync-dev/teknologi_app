@@ -41,6 +41,7 @@ public class UserManagerLogin : MonoBehaviour
         User user = new User(username, password, email);
         users.Add(user);
         SaveUsers();
+        Debug.Log($"User  created: {username}, {password}, {email}");
     }
 
     public bool Login(string username, string password)
@@ -62,6 +63,11 @@ public class UserManagerLogin : MonoBehaviour
         {
             string jsonData = File.ReadAllText(filePath);
             users = JsonConvert.DeserializeObject<List<User>>(jsonData);
+            Debug.Log($"Loaded {users.Count} users.");
+        }
+        else
+        {
+            Debug.Log("User  data file not found.");
         }
     }
 
@@ -74,6 +80,7 @@ public class UserManagerLogin : MonoBehaviour
 
     public void OnLoginButtonClicked()
     {
+        LoadUsers();
         string username = usernameInputField.text;
         string password = passwordInputField.text;
         if (Login(username, password))

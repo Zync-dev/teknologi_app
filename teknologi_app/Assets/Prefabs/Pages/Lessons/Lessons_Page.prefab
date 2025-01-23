@@ -301,7 +301,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start kursus
+  m_text: "V\xE6lg Lektion"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start kursus
+  m_text: "V\xE6lg Lektion"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
@@ -3547,7 +3547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start kursus
+  m_text: "V\xE6lg Lektion"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
@@ -3678,15 +3678,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.23529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -6371273292999675509, guid: 8a127472e26bb884baff7f99078436ad, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3817,8 +3817,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Her udforsker vi nogle af de vigtigste emner om, hvordan vi som unge interagerer
-    med hinanden i den fysiske verden, med fokus p\xE5 sociale mediers indflydelse.
-    Vi ved, at det kan v\xE6re udfordrende at finde sin vej i en tid, hvor digitale
+    med hinanden i den fysiske verden, med fokus p\xE5 sociale mediers indflydelse.Vi
+    ved, at det kan v\xE6re udfordrende at finde sin vej i en tid, hvor digitale
     medier fylder s\xE5 meget, at balancen mellem den digitale verden og fysiske
     verden, er sv\xE6r at navigere i. Derfor ser vi n\xE6rmere p\xE5 de problematikker,
     der opst\xE5r i forbindelse med unges fysiske interaktioner i is\xE6r f\xE6llesskaber. "
@@ -3958,7 +3958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start kursus
+  m_text: "V\xE6lg Lektion"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
   m_sharedMaterial: {fileID: -443693480758193723, guid: 50c7ca247cd646543ac3e2c611eb4de6, type: 2}
