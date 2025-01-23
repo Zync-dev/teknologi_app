@@ -2185,6 +2185,7 @@ GameObject:
   - component: {fileID: 773951378621295693}
   - component: {fileID: 6996116086335999704}
   - component: {fileID: 1309263344089375007}
+  - component: {fileID: 5595484527859023464}
   m_Layer: 5
   m_Name: Achievements_Page
   m_TagString: Page
@@ -2282,6 +2283,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5595484527859023464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4703248578484411212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec1fdb2c31d55a4fb7dc1b293cd03dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txts:
+  - {fileID: 108479853426394708}
+  - {fileID: 3701866845090325781}
 --- !u!1 &5023918259673456555
 GameObject:
   m_ObjectHideFlags: 0

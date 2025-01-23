@@ -163,6 +163,7 @@ public class LessonsQuiz : MonoBehaviour
         if (id == fomoQuizQuestions[chosenQuiz].CorrectAnswerIndex)
         {
             notificationManager.SendNotification("Rigtigt svar! +10 mønter", false);
+            PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Points", PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Points") + 10);
         } else
         {
             notificationManager.SendNotification("Forkert svar!", true);
