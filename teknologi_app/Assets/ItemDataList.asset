@@ -18,7 +18,7 @@ MonoBehaviour:
       og begyndere \u2013 alle kan v\xE6re med. Vi starter klokken 14 og bliver ved
       s\xE5 l\xE6nge vi vil. Der vil ogs\xE5 v\xE6re mulighed for \xF8velser og tr\xE6ning
       med lokale tr\xE6nere. "
-    date: 08/04/2025
+    date: 04/08/2025
     location: "L\xF8kken Strand"
     price: 0
     smallImg: {fileID: 8211880219036761192, guid: ebcd786b6eafc1d48adc2b4ff7959fe7, type: 3}
@@ -41,7 +41,7 @@ MonoBehaviour:
     price: 50
     smallImg: {fileID: -8515146024297122585, guid: 94f7056b2d3f0594da3117d05ec87c9d, type: 3}
     largeImg: {fileID: 4426337598998381228, guid: 21a2823778b867640a04bc528209093d, type: 3}
-  - header: 'Skovtur i Rold Skov '
+  - header: Skovtur i Rold Skov
     description: "Guidet tur i Rold Skov med naturforsker Jens Jacob Ibsen. L\xE6r
       om natur, historie og geologi i smukke omgivelser med andre unge.  "
     date: 15/03/2025
@@ -49,15 +49,6 @@ MonoBehaviour:
     price: 100
     smallImg: {fileID: -5794113547816340336, guid: 69c1d94e5c5607748a03f0980d2d9fd8, type: 3}
     largeImg: {fileID: 2751772174267076452, guid: de7edcfbbb946914686e3ec3f0db0f08, type: 3}
-  - header: "Guidet tur p\xE5 Kunsten "
-    description: "En hyggelig guidet tur p\xE5 Kunsten i Aalborg, specielt tilrettelagt
-      til unge. Der vil blive rigelig mulighed for at stille sp\xF8rgsm\xE5l og tage
-      billeder undervejs.  "
-    date: 03/05/2025
-    location: Kunsten, Aalborg
-    price: 70
-    smallImg: {fileID: 4333599278507646516, guid: 6a84b05375765d84f81a9e132344065e, type: 3}
-    largeImg: {fileID: 5512460959737791959, guid: 056658661a9cb4141a5230a2ce055da7, type: 3}
   - header: Danseworkshop
     description: "\xC5ben workshop med hiphop- og street dans med danseinstrukt\xF8r
       Leila Jacobsen. B\xE5de begyndere og \xF8vede dansere er velkomne. Vi slutter
@@ -68,11 +59,20 @@ MonoBehaviour:
     price: 100
     smallImg: {fileID: 2307332597735870950, guid: a463813e2e3ea17468247d3abcf4dbd6, type: 3}
     largeImg: {fileID: 9073957038029129498, guid: 9807d12bdcff9944c97df86a52bef6d8, type: 3}
+  - header: "Guidet tur p\xE5 Kunsten"
+    description: "En hyggelig guidet tur p\xE5 Kunsten i Aalborg, specielt tilrettelagt
+      til unge. Der vil blive rigelig mulighed for at stille sp\xF8rgsm\xE5l og tage
+      billeder undervejs.\xBD"
+    date: 03/05/2025
+    location: Kunsten, Aalborg
+    price: 70
+    smallImg: {fileID: 4333599278507646516, guid: 6a84b05375765d84f81a9e132344065e, type: 3}
+    largeImg: {fileID: 5512460959737791959, guid: 056658661a9cb4141a5230a2ce055da7, type: 3}
   - header: Sheltertur i Hesteskoen
     description: "Hyggelig aften i hesteskoens smukke omgivelser med b\xE5l, b\xE5lmad
       og overnatning. Der bliver serveret aftensmad, som bliver lavet i f\xE6llesskab
       over b\xE5let, samt mulighed for snobr\xF8d og skumfiduser senere p\xE5 aftenen.
-      Der vil ogs\xE5 blive serveret morgenmad. "
+      Der vil ogs\xE5 blive serveret morgenmad."
     date: 29/03/2025
     location: Hesteskoen, Aalborg
     price: 40

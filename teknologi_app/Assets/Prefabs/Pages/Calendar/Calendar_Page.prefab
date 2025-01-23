@@ -451,7 +451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultActivityItemPrefab: {fileID: 8451745314038989595, guid: 4b4c33b312d9f7149919de1802b56d29, type: 3}
   contentObj: {fileID: 8034052197247062972}
-  itemDataList: {fileID: 11400000, guid: 962ae64251d18f5429fe28e84c08bdb6, type: 2}
+  itemDataList: {fileID: 11400000, guid: 89875bb729d4e554f8f1bfc5b397f18f, type: 2}
 --- !u!1 &3991583935245795397
 GameObject:
   m_ObjectHideFlags: 0
