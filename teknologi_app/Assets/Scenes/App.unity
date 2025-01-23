@@ -283,6 +283,38 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_margin.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_margin.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_margin.z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 81e9242069f8a02489cb56a319dc2be7, type: 2}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2307753695758730708, guid: 81e9242069f8a02489cb56a319dc2be7, type: 2}
+    - target: {fileID: 5199110851414412235, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5450520670122029197, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
       propertyPath: m_Name
       value: Home_Page
@@ -315,6 +347,30 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6010674497601016563, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010674497601016563, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 335.772
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010674497601016563, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.043395996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010674497601016563, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17.886
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071542031448498480, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938750814197096328, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3595649670824229844, guid: 2aa3f95df3c79854ba872d0c80884f4c, type: 3}
     - target: {fileID: 8971766650124331412, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -336,7 +392,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6071542031448498480, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b52e7d23df8457f4bb9fe83808beaf40, type: 3}
@@ -686,6 +743,116 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &676836369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 676836371}
+  - component: {fileID: 676836370}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: DataManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &676836370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676836369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4a08b4653bf00409b530bfd7197ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDataList:
+  - header: "Volleyball p\xE5 L\xF8kken Strand"
+    description: "Volleyball turnering p\xE5 stranden for alle, for b\xE5de \xF8vede
+      og begyndere \u2013 alle kan v\xE6re med. Vi starter klokken 14 og bliver ved
+      s\xE5 l\xE6nge vi vil. Der vil ogs\xE5 v\xE6re mulighed for \xF8velser og tr\xE6ning
+      med lokale tr\xE6nere."
+    date: 08/04/2025
+    location: "L\xF8kken Strand"
+    price: 0
+    smallImg: {fileID: 8211880219036761192, guid: ebcd786b6eafc1d48adc2b4ff7959fe7, type: 3}
+    largeImg: {fileID: 8038505062017641940, guid: d4a92dcefca0c2742801bcc590ca3109, type: 3}
+  - header: "Br\xE6tspilscaf\xE9"
+    description: "Tag dit bedste br\xE6tspil under armen og kom til en hyggelig aften
+      med snacks, hygge og god stemning."
+    date: 21/03/2025
+    location: "Br\xE6tspilscaf\xE9en, Aalborg"
+    price: 0
+    smallImg: {fileID: -208893595629379633, guid: 0122d64ac56ff764d90edbfdf62e018d, type: 3}
+    largeImg: {fileID: 1890994036070442636, guid: 7affeaee86eada04da1fa7a3911802bc, type: 3}
+  - header: Keramik
+    description: "\xC5bent keramikv\xE6rksted i Aarhus, hvor du f\xE5r mulighed for
+      at udfolde dig kunstnerisk gennem keramik \u2013 og du m\xE5 gerne tage det
+      med hjem. Mulighed for br\xE6nding, glac\xE9ring og maling af keramik samt
+      vejledning fra lokale eksperter."
+    date: 30/03/2024
+    location: Godsbanen, Aalborg
+    price: 50
+    smallImg: {fileID: -8515146024297122585, guid: 94f7056b2d3f0594da3117d05ec87c9d, type: 3}
+    largeImg: {fileID: 4426337598998381228, guid: 21a2823778b867640a04bc528209093d, type: 3}
+  - header: Skovtur i Rold Skov
+    description: "Guidet tur i Rold Skov med naturforsker Jens Jacob Ibsen. L\xE6r
+      om natur, historie og geologi i smukke omgivelser med andre unge."
+    date: 15/03/2025
+    location: Rold Skov
+    price: 100
+    smallImg: {fileID: -5794113547816340336, guid: 69c1d94e5c5607748a03f0980d2d9fd8, type: 3}
+    largeImg: {fileID: 2751772174267076452, guid: de7edcfbbb946914686e3ec3f0db0f08, type: 3}
+  - header: "Guidet tur p\xE5 Kunsten"
+    description: "En hyggelig guidet tur p\xE5 Kunsten i Aalborg, specielt tilrettelagt
+      til unge. Der vil blive rigelig mulighed for at stille sp\xF8rgsm\xE5l og tage
+      billeder undervejs."
+    date: 03/05/2025
+    location: Kunsten, Aalborg
+    price: 70
+    smallImg: {fileID: 4333599278507646516, guid: 6a84b05375765d84f81a9e132344065e, type: 3}
+    largeImg: {fileID: 5512460959737791959, guid: 056658661a9cb4141a5230a2ce055da7, type: 3}
+  - header: Danseworkshop
+    description: "\xC5ben workshop med hiphop- og street dans med danseinstrukt\xF8r
+      Leila Jacobsen. B\xE5de begyndere og \xF8vede dansere er velkomne. Vi slutter
+      af med en lille performance for for\xE6ldre og andre interesserede klokken
+      18. Vi s\xF8rger for en sandwich og en sodavand til frokost."
+    date: 26/04/2025
+    location: Planum Studios, Aarhus
+    price: 100
+    smallImg: {fileID: 2307332597735870950, guid: a463813e2e3ea17468247d3abcf4dbd6, type: 3}
+    largeImg: {fileID: 9073957038029129498, guid: 9807d12bdcff9944c97df86a52bef6d8, type: 3}
+  - header: Sheltertur i Hesteskoen
+    description: "Hyggelig aften i hesteskoens smukke omgivelser med b\xE5l, b\xE5lmad
+      og overnatning. Der bliver serveret aftensmad, som bliver lavet i f\xE6llesskab
+      over b\xE5let, samt mulighed for snobr\xF8d og skumfiduser senere p\xE5 aftenen.
+      Der vil ogs\xE5 blive serveret morgenmad."
+    date: 29/03/2025
+    location: Hesteskoen, Aalborg
+    price: 40
+    smallImg: {fileID: 2342126889942523218, guid: 6a4dd4a8afae604429ca53449f248d30, type: 3}
+    largeImg: {fileID: 7279957089378847752, guid: 9d09ae980c3a0584eb3b960a3356896f, type: 3}
+--- !u!4 &676836371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676836369}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 198.05942, y: 281.97098, z: -3.8095086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2684,3 +2851,4 @@ SceneRoots:
   - {fileID: 39016378}
   - {fileID: 1582799553}
   - {fileID: 110892878}
+  - {fileID: 676836371}

@@ -451,7 +451,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultActivityItemPrefab: {fileID: 8451745314038989595, guid: 4b4c33b312d9f7149919de1802b56d29, type: 3}
   contentObj: {fileID: 8034052197247062972}
-  itemDataList: {fileID: 11400000, guid: 89875bb729d4e554f8f1bfc5b397f18f, type: 2}
+  itemDataList:
+  - header: 1
+    description: 1
+    date: 1
+    location: 1
+    price: 1
+    smallImg: {fileID: 2342126889942523218, guid: 6a4dd4a8afae604429ca53449f248d30, type: 3}
+    largeImg: {fileID: 7279957089378847752, guid: 9d09ae980c3a0584eb3b960a3356896f, type: 3}
+  - header: 2
+    description: 2
+    date: 2
+    location: 2
+    price: 2
+    smallImg: {fileID: 0}
+    largeImg: {fileID: 0}
+  - header: 3
+    description: 3
+    date: 3
+    location: 3
+    price: 3
+    smallImg: {fileID: 0}
+    largeImg: {fileID: 0}
 --- !u!1 &3991583935245795397
 GameObject:
   m_ObjectHideFlags: 0

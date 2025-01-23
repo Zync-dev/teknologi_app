@@ -1,8 +1,7 @@
 using TMPro;
 using UnityEngine;
-using static CalendarPage;
 using UnityEngine.UI;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 
 public class CalendarChosenPage : MonoBehaviour
 {
@@ -16,39 +15,49 @@ public class CalendarChosenPage : MonoBehaviour
 
     public Image logoImg;
 
-    public ItemDataList itemDataList;
+    List<ItemData> itemDataList = new List<ItemData>();
 
-    bool signedUp = false;
+    private bool signedUp = false;
 
-    NotificationManager notificationManager;
+    private NotificationManager notificationManager;
 
     private void Start()
     {
         notificationManager = GameObject.Find("NotificationManager").GetComponent<NotificationManager>();
 
+        itemDataList = GameObject.FindGameObjectWithTag("DataManager").GetComponent<DataManager>().itemDataList;
+
+        for(int i = 0; i < itemDataList.Count; i++)
+        {
+            print(itemDataList[i].header);
+        }
+
+        headerText.text = itemDataList[chosenPageId].header;
+        descriptionText.text = itemDataList[chosenPageId].description;
+        informationText.text = $"Dato: {itemDataList[chosenPageId].date}\nLokation: {itemDataList[chosenPageId].location}\nPris: {itemDataList[chosenPageId].price} kr.";
+
+        logoImg.sprite = itemDataList[chosenPageId].largeImg;
+
         CheckIfAlreadySignedUp();
     }
 
-    public void InstantiateItems(int i)
+    public void InstantiateItems2(int i)
     {
         chosenPageId = i;
-
-        headerText.text = itemDataList.items[i].header;
-        descriptionText.text = itemDataList.items[i].description;
-        informationText.text = $"Dato: {itemDataList.items[i].date}\nLokation: {itemDataList.items[i].location}\nPris: {itemDataList.items[i].price} kr.";
-
-        logoImg.sprite = itemDataList.items[i].largeImg;
     }
 
-    void CheckIfAlreadySignedUp()
+
+    private void CheckIfAlreadySignedUp()
     {
+        // Check if the user is already signed up based on PlayerPrefs
         if (PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Activity-{chosenPageId}") == 1)
         {
             tilmeldBtn.gameObject.GetComponentInChildren<TMP_Text>().text = "Afmeld".ToUpper();
             tilmeldBtn.gameObject.GetComponentInChildren<TMP_Text>().color = Color.red;
             tilmeldBtn.gameObject.GetComponent<Image>().color = new Color32(225, 225, 225, 255);
             signedUp = true;
-        } else if (PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Activity-{chosenPageId}") == 0)
+        }
+        else if (PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Activity-{chosenPageId}") == 0)
         {
             tilmeldBtn.gameObject.GetComponentInChildren<TMP_Text>().text = "Tilmeld".ToUpper();
             tilmeldBtn.gameObject.GetComponentInChildren<TMP_Text>().color = Color.black;
@@ -59,12 +68,12 @@ public class CalendarChosenPage : MonoBehaviour
 
     public void TilmeldBtn()
     {
-        if(!signedUp)
+        if (!signedUp)
         {
             notificationManager.SendNotification("Du har tilmeldt dig aktiviteten!", false);
             PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Activity-{chosenPageId}", 1);
             CheckIfAlreadySignedUp();
-        } 
+        }
         else if (signedUp)
         {
             notificationManager.SendNotification("Du har afmeldt dig aktiviteten!", true);

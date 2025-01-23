@@ -37,6 +37,6 @@ public class CalendarItem : MonoBehaviour
         GameObject CalendarChosenPageObj = GameObject.Find("Calendar_Chosen(Clone)");
         CalendarChosenPage calendarChosenPageScript = CalendarChosenPageObj.GetComponent<CalendarChosenPage>();
 
-        calendarChosenPageScript.InstantiateItems(calendarItemId);
+        calendarChosenPageScript.InstantiateItems2(calendarItemId);
     }
 }
