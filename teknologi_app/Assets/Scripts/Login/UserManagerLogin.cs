@@ -41,7 +41,6 @@ public class UserManagerLogin : MonoBehaviour
         User user = new User(username, password, email);
         users.Add(user);
         SaveUsers();
-        PlayerPrefs.SetInt($"{username}-Exp", 100);
         Debug.Log($"User  created: {username}, {password}, {email}");
     }
 
@@ -90,6 +89,10 @@ public class UserManagerLogin : MonoBehaviour
             currentUsername = username;
             PlayerPrefs.SetString("Name", usernameInputField.text);
             PlayerPrefs.SetFloat("LoggedIn", 1);
+            if (PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp") < 100)
+            {
+                PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Exp", 100);
+            }
             PlayerPrefs.Save();
             SceneManager.LoadScene("App");
         }

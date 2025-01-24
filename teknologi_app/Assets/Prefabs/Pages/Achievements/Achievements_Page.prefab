@@ -3574,7 +3574,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec1fdb2c31d55a4fb7dc1b293cd03dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointTxts: []
+  pointTxts:
+  - {fileID: 3701866845090325781}
+  - {fileID: 108479853426394708}
   lvltxt: {fileID: 1826259962612926802}
   pointsPanel: {fileID: 6079921516108324463}
   finishedLessons: {fileID: 7326699443266115707}

@@ -40,8 +40,8 @@ public class AchievementsScript : MonoBehaviour
         {
             item.text = PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Points").ToString();
         }
-        lvltxt.text = Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetInt("Name")}-Exp")/100)).ToString();
-        if(PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons") == 1)
+        lvltxt.text = (Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp") / 100))).ToString();
+        if (PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons") == 1)
         {
             finishedLessons.text = PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Finished_Lessons").ToString() + " LEKTION";
         } else

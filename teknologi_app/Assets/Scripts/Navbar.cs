@@ -124,10 +124,10 @@ public class Navbar : MonoBehaviour
     private void Update()
     {
         //Navbar-top level
-        lvlSlider.value = (float)PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp");
+        lvlSlider.value = (float)PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp") % 100;
 
-        lvlTxt[0].text = Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetInt("Name")}-Exp") / 100)).ToString();
-        lvlTxt[1].text = ((Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetInt("Name")}-Exp") / 100)))+1).ToString();
+        lvlTxt[0].text = (Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp") / 100))).ToString();
+        lvlTxt[1].text = ((Mathf.Floor((PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Exp") / 100)))+1).ToString();
     }
 
     private void Start()
