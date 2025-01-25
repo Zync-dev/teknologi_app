@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using static CalendarPage;
@@ -25,6 +26,14 @@ public class AchievementsScript : MonoBehaviour
         if (PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Points") >= price)
         {
             notificationManager.SendNotification("Du har indløst et gavekort! Du vil modtage en e-mail inden længe.", false);
+
+            int newPoints = Convert.ToInt32(PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Points")) - price;
+            PlayerPrefs.SetInt($"{PlayerPrefs.GetString("Name")}-Points", Convert.ToInt32(newPoints));
+
+            foreach (var item in pointTxts)
+            {
+                item.text = PlayerPrefs.GetInt($"{PlayerPrefs.GetString("Name")}-Points").ToString();
+            }
         }
         else
         {
