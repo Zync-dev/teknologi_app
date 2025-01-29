@@ -594,7 +594,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: App-navn her
+  m_text: Social Boost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38e3ffdf77810de44a194d1c284682e8, type: 2}
   m_sharedMaterial: {fileID: -3320635257402824362, guid: 38e3ffdf77810de44a194d1c284682e8, type: 2}
@@ -3561,7 +3561,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: App-navn her
+  m_text: Social Boost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38e3ffdf77810de44a194d1c284682e8, type: 2}
   m_sharedMaterial: {fileID: -3320635257402824362, guid: 38e3ffdf77810de44a194d1c284682e8, type: 2}
